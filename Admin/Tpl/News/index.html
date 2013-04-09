@@ -7,14 +7,15 @@
 </head>
 <body>
     <div class="">
+    <div><a href="__URL__/Add">添加新闻</a></div>
         <ul class="news">
             <volist name ="list" id="list">
                 <li>
                     <ul class="new">
                         <li>{$list.title}</li>
                         <li>{$list.create_time|date="Y-m-d h:i:s",###}</li>
-                        <li><a href="__URL__/Edit/{$list.id}">编辑此项</a></li>
-                        <li><a href="__URL__/Del/{$list.id}">删除此项</a></li>
+                        <li><a href="__URL__/Edit/id/{$list.id}">编辑此项</a></li>
+                        <li><a href="__URL__/Del/id/{$list.id}">删除此项</a></li>
                     </ul>
                 </li>
             </volist>
