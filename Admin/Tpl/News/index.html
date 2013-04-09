@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <load file="__PUBLIC__/Css/base.css"/>
+    <load file="__PUBLIC__/Css/news.css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <div class="">
+        <ul class="news">
+            <volist name ="list" id="list">
+                <li>
+                    <ul class="new">
+                        <li>{$list.title}</li>
+                        <li>{$list.create_time|date="Y-m-d h:i:s",###}</li>
+                        <li><a href="__URL__/Edit/{$list.id}">编辑此项</a></li>
+                        <li><a href="__URL__/Del/{$list.id}">删除此项</a></li>
+                    </ul>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</body>
+</html>

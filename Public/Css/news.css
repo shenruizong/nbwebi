@@ -1,0 +1,14 @@
+.new
+{
+    
+}
+.new li
+{
+    float: left;
+    margin-left: 15px;
+    min-width: 35px;
+}
+.news
+{
+    float: left;
+}
