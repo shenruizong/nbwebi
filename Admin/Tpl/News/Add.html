@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <load file="__PUBLIC__/ueditor/editor_config.js"/>
+    <load file="__PUBLIC__/ueditor/editor_all.js"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <div>
+        <form method="POST" action="__URL__/AddDb">
+            <ul>
+                <li>
+                    新闻标题：
+                    <input type="text" name="title" value="" />
+                </li>
+                <li>
+                    新闻分类:<select name="newstype_id">
+                        <volist id="list" name="list">
+                            <option value="{$list.id}">{$list.type_name}</option>
+                        </volist>
+                    </select>
+                </li>
+                <li>
+                    新闻内容：
+                    <textarea name="text_info" id="myEditor" rows="4" cols="20">
+
+                    </textarea>
+                    <script type="text/javascript">
+                        var editor = new UE.ui.Editor();
+                        editor.render("myEditor");
+                        //1.2.4以后可以使用一下代码实例化编辑器
+                        //UE.getEditor('myEditor')
+                    </script>
+                </li>
+                <li>
+                    <input type="submit" value="添加" />
+                </li>
+            </ul>
+        </form>
+    </div>
+</body>
+</html>
