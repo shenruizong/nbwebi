@@ -11,8 +11,10 @@
 <ul>
 	<li>新闻标题： <input type="text" name="title" value="{$list.title}" />
 	</li>
-	<li>新闻分类:<select name="">
-		<option value="{$list.id}">{$list.type_name}</option>
+	<li>新闻分类:<select name="newstype_id" >
+	<volist id="type" name="type">
+		<option value="{$type.id}" <eq name="type.id" value="$list.newstype_id" >selected</eq>>{$type.type_name}</option>
+	</volist>
 	</select></li>
 	<li>新闻内容： <textarea name="text_info" id="myEditor" rows="4"
 		cols="20">
