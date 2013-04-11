@@ -1,12 +1,12 @@
 @CHARSET "UTF-8";
 
 body {
-	background-color: #bbb;
+	background-color: #EEE;
 }
 
 .header {
 	width: 1000px;
-	height: 200px;
+	height: 125px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
@@ -56,3 +56,46 @@ body {
 	font-size: 20px;
 	margin-top: -5px;
 }
+.content
+	{
+		margin: 0 auto;
+		width: 1000px;
+	}
+#poster {
+	margin: 0 auto;
+	width: 1000px;
+	display: none;
+}
+
+.photo {
+	width: 500px;
+	height: 200px;
+	float: left;
+}
+.customer
+	{
+		height: 200px;
+	}
+.customer li
+	{
+		float: left;
+	}
+.footer {
+	width: 1000px;
+	height:100px;
+	background-color: #CCC;
+	margin: 0 auto;
+	text-align: center;
+	font: 12px arial;
+}
+.license
+	{
+	float:left;
+	border-top:1px;
+	border-top-style:solid;
+	border-top-color: #AAA;
+	width: 600px;
+	margin-top: 35px;
+	margin-left: 200px;
+	padding: 5px;
+	}

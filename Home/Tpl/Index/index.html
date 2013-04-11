@@ -1,1 +1,43 @@
-<include file="Public:header"/>
+<include file="Public:header" />
+<div class="content">
+	<load href="__PUBLIC__/Js/sliders/jquery.slides.min.js" /> 
+	<load href="__PUBLIC__/Js/sliders/sliders.css"/>
+	<script>
+    $(function(){
+      $("#poster").slidesjs({
+    	  navigation: false,
+    	  play: {
+          auto: true,
+          pauseOnHover: true,
+          restartDelay: 2500,
+      }
+      });
+    });
+  </script>
+	<div id="poster">
+		<img src="__PUBLIC__/Upload/example-slide-1.jpg">
+	    <img src="__PUBLIC__/Upload/example-slide-2.jpg">
+	    <img src="__PUBLIC__/Upload/example-slide-3.jpg">
+	    <img src="__PUBLIC__/Upload/example-slide-4.jpg">
+	</div>
+	<div class="maincontent">
+		<div class="photo">
+			<ul>
+			
+			</ul>
+		</div>
+		<div class="customer">
+		知名全球500强企业选择韦博作为专业语言培训供应商：
+		<ul>
+			
+			<li class="cst-fedex"><img src="__PUBLIC__/Upload/idx-cst-lenovo-over.gif"/></li>
+			<li class="cst-bayer"><img src="__PUBLIC__/Upload/idx-cst-lenovo-over.gif"/></li>
+			<li class="cst-honeywell"><img src="__PUBLIC__/Upload/idx-cst-lenovo-over.gif"/></li>
+			<li class="cst-lenovo"><img src="__PUBLIC__/Upload/idx-cst-lenovo-over.gif"/></li>
+			<li class="cst-huawei"><img src="__PUBLIC__/Upload/idx-cst-lenovo-over.gif"/></li>
+			<li class="cst-johnson"><img src="__PUBLIC__/Upload/idx-cst-lenovo-over.gif"/></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<include file="Public:footer" />
