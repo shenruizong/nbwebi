@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #bbb;
+}
+
+.header {
+	width: 1000px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+.logo {
+	float: left;
+}
+
+.header-right {
+	float: right;
+	font-size: 15px;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+
+.address {
+	clear: both;
+}
+
+.address span {
+	float: left;
+}
+
+.address ul {
+	float: left;
+}
+
+.address li {
+	float: left;
+	padding: 0 10px;
+}
+
+.phone {
+	clear: both;
+	float: left;
+	margin-top: 8px;
+}
+
+.phone span {
+	float: left;
+}
+
+.phone h5 {
+	float: left;
+	padding: 0 10px;
+	font-size: 20px;
+	margin-top: -5px;
+}

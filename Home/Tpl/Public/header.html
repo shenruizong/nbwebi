@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<load file="__PUBLIC__/Js/jquery.min.js" />
+<load file="__PUBLIC__/colorbox/jquery.colorbox-min.js" />
+<load file="__PUBLIC__/Css/base.css" />
+<load file="__PUBLIC__/colorbox/colorbox.css" />
+<load file="__PUBLIC__/Css/main.css" />
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>{$title}</title>
+</head>
+<body>
+<div class="header">
+<div class="logo"><a href="__APP__"><img
+	src="__PUBLIC__/Images/logo.png" /></a></div>
+<div class="header-right">
+<div class="address"><span>学习中心地址:</span>
+<ul>
+
+	<li><a
+		href="http://api.map.baidu.com/staticimage?width=800&height=600&center=121.561756,29.874384&zoom=18&markers=121.561504,29.874478&markerStyles=l,0"
+		class="iframe gallery">海曙</a></li>
+	<li><a
+		href="http://api.map.baidu.com/staticimage?width=800&height=600&center=121.561756,29.874384&zoom=18&markers=121.561504,29.874478&markerStyles=l,0"
+		class="iframe gallery">鄞州</a></li>
+	<li><a
+		href="http://api.map.baidu.com/staticimage?width=800&height=600&center=121.561756,29.874384&zoom=18&markers=121.561504,29.874478&markerStyles=l,0"
+		class="iframe gallery">慈溪</a></li>
+</ul>
+<script>
+		    		jQuery('a.gallery').colorbox({iframe:true,width:"850",height:"700"});
+				</script></div>
+<div class="phone"><span>学习咨询热线:</span><h5>400</h5> <h5>888</h5> <h5>9090</h5></div>
+</div>
+</div>
