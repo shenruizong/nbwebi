@@ -16,8 +16,7 @@
 		<option value="{$type.id}" <eq name="type.id" value="$list.newstype_id" >selected</eq>>{$type.type_name}</option>
 	</volist>
 	</select></li>
-	<li>新闻内容： <textarea name="text_info" id="myEditor" rows="4"
-		cols="20">
+	<li>新闻内容： <textarea name="text_info" id="myEditor" rows="4" cols="20">
 						{$list.text_info}
                     </textarea> <script type="text/javascript">
                         var editor = new UE.ui.Editor();
