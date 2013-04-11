@@ -1,8 +1,7 @@
 <?php
 
-$arr1 = array(
+return array(
         //'配置项'=>'配置值'
+        'SHOW_ERROR_MSG'        => true,
 );
-$arr2 = include 'config.inc.php';
-return array_merge($arr1, $arr2);
 ?>
