@@ -69,35 +69,57 @@ body {
 }
 
 .photo {
-	width: 500px;
+	width: 400px;
 	height: 200px;
 	float: left;
 }
 
+.photo ul li {
+	float: left;
+	padding: 5px;
+}
+
+.photo img {
+	height: 110px;
+	width: 90px;
+}
+
 .customer {
-	float:left;
+	float: left;
 	height: 60px;
 }
 
 .customer li {
 	float: left;
 }
-.maincontent
-	{
+
+.maincontent {
 	border-top: 1px;
 	border-top-style: solid;
 	border-top-color: #AAA;
-	margin-top:25px;
-		height: 400px;
-		padding-top: 5px;
-	}
-.reg
-	{
-	float:left;
-		width: 200px;
-		height: 80px;
-		font-size: 20px;
-	}
+	margin-top: 25px;
+	height: 400px;
+	padding-top: 5px;
+}
+
+.reg {
+	float: left;
+	width: 250px;
+	height: 45px;
+	font-size: 25px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #CCC;
+	text-align: center;
+	margin-top: 8px;
+	margin-left: 15px;
+}
+
+.reg a {
+	text-decoration: none;
+	color: #000;
+}
+
 .weibo {
 	width: 300px;
 	height: 300px;

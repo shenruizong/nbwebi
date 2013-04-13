@@ -3,7 +3,7 @@ class RegAction extends Action
 {
 	function index()
 	{
-		
+		$this->display();
 	}
 	function show_inwindow()
 	{
@@ -11,13 +11,14 @@ class RegAction extends Action
 	}
 	function RegDb()
 	{
+		echo "abc";
 		$member = new MemberModel();
 		if($member->create())
 		{
 			$member->save();
+			$this->success("成功");
 		}else {
 			echo $member->getError();
 		}
-		
 	}
 }
